@@ -50,6 +50,13 @@ return [
             ],
         ],
 
+        'articles' => [
+            // 'already_exists' => 'That Article already exists. Please choose a different name.',
+            'create_error' => 'There was a problem creating this Article. Please try again.',
+            'delete_error' => 'There was a problem deleting this Article. Please try again.',
+            'update_error' => 'There was a problem updating this Article. Please try again.',
+        ],
+
         'blogs' => [
             // 'already_exists' => 'That Blog already exists. Please choose a different name.',
             'create_error' => 'There was a problem creating this Blog. Please try again.',

@@ -58,6 +58,17 @@ return [
                 'view' => 'View Page',
             ],
 
+            'editex' => [
+                'all' => 'All Articles',
+                'active' => 'Active Article',
+                'create' => 'Create Article',
+                'deactivated' => 'Deactivated Article',
+                'deleted' => 'Deleted Article',
+                'edit' => 'Edit Article',
+                'main' => 'Articles',
+                'view' => 'View Article',
+            ],
+
             'blogs' => [
                 'all' => 'All Blogs',
                 'active' => 'Active Blogs',
@@ -127,6 +138,7 @@ return [
             'system' => 'System',
             'blogs' => 'Blog Management',
             'pages' => 'Pages Management',
+            'editex' => 'Editex Articles',
             'faqs' => 'Faq Management',
             'email-templates' => 'Email Templates',
         ],

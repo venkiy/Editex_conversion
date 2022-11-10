@@ -234,6 +234,12 @@ return [
                     'meta_description' => 'Meta Description',
                     'status' => 'Status',
                 ],
+                'article' => [
+                    'publisher_id' => 'Publisher Id',
+                    'publisher_name' => 'Publisher Name',
+                    'article_id' => 'Article Id',                    
+                    'status' => 'Status',
+                ],
             ],
         ],
 

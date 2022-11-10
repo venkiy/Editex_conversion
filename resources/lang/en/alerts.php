@@ -42,6 +42,12 @@ return [
             ],
         ],
 
+        'articles' => [
+            'created' => 'The article was successfully created.',
+            'updated' => 'The article was successfully updated.',
+            'deleted' => 'The article was successfully deleted.',
+        ],
+
         'blogs' => [
             'created' => 'The blog was successfully created.',
             'updated' => 'The blog was successfully updated.',

@@ -241,6 +241,65 @@ return [
                 ],
             ],
 
+            'editex' => [
+                'all' => 'All Articles',
+                'active' => 'Article List',
+                'create' => 'Create Article',
+                'deactivated' => 'Deactivated Article',
+                'deleted' => 'Deleted Article',
+                'show' => 'Edit Article',
+                'edit' => 'Edit Article',
+                'management' => 'Article Management',
+                'Process' => [
+                'step1'=>'NoeCEs',
+                'step2'=>'Galleys PDF',
+                'step3'=>'Typesetting',
+                'step4'=>'Proof PDF',
+                'step5'=>'Download package',
+                ],
+                'tabs' => [
+                    'titles' => [
+                        'noecs' => 'NOECS',
+                        'galleypdf' => 'GALLEYPDF',
+                        'typeset' => 'TYPESET',
+                    ],
+
+                    'content' => [
+                        'article' => [
+                           'publisher_id' => 'Publisher ID',
+                           'publisher_name' => 'Publisher Name',
+                           'article_id' => 'Article ID',
+                           'status' => 'Article Status',
+                           'start' => 'Started at',
+                            'end' => 'End at',                            
+                            'stage_status' => 'Completed Status', 
+                        ],
+                        'noecs' => [
+                            'noecs_start' => 'Started at',
+                            'noecs_end' => 'End at',                            
+                            'status' => 'Completed Status',                            
+                        ],
+                    ],
+                ],
+
+                'table' => [
+                    'created' => 'Created',
+                    'id' => 'ID',
+                    'last_updated' => 'Last Updated',
+                    'page_slug' => 'Page Slug',
+                    'name' => 'Page Name',
+                    'description' => 'Description',
+                    'cannonical_link' => 'Cannonical Link',
+                    'seo_title' => 'SEO Title',
+                    'seo_keyword' => 'SEO Keyword',
+                    'seo_description' => 'SEO Description',
+                    'status' => 'Status',
+                    'createdby' => 'Created By',
+                    'createdat' => 'Created At',
+                    'total' => 'pages total|pages total',
+                ],
+            ],
+
             'faqs' => [
                 'all' => 'All Faqs',
                 'active' => 'Faq List',
