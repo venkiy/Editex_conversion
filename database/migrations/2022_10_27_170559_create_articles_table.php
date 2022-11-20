@@ -17,13 +17,17 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->string('publisher_id')->nullable();
             $table->string('publisher_name')->nullable();
-            $table->string('article_id')->unique();            
+            $table->string('article_id')->unique(); 
+            $table->string('article_path')->nullable();            
             $table->unsignedTinyInteger('noecs')->default(0);
             $table->timestamp('noecse_start')->nullable();
             $table->timestamp('noecse_end')->nullable();
             $table->unsignedTinyInteger('galleypdf')->default(0);
             $table->timestamp('galleypdf_start')->nullable();
             $table->timestamp('galleypdf_end')->nullable();
+            $table->unsignedTinyInteger('galleyproofpdf')->default(0);
+            $table->timestamp('galleyproofpdf_start')->nullable();
+            $table->timestamp('galleyproofpdf_end')->nullable();
             $table->unsignedTinyInteger('typeset')->default(0);
             $table->timestamp('typeset_start')->nullable();
             $table->timestamp('typeset_end')->nullable();

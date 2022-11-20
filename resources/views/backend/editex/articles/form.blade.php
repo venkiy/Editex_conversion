@@ -46,6 +46,16 @@
             </div>
             <!--form-group-->
 
+            <div class="form-group row">
+                {{ Form::label('article_path', trans('validation.attributes.backend.access.article.article_path'), ['class' => 'col-md-2 from-control-label required']) }}
+
+                <div class="col-md-10">
+                    {{ Form::text('article_path', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.access.article.article_path')]) }}
+                </div>
+                <!--col-->
+            </div>
+            <!--form-group-->
+
             
             <div class="form-group row">
                 {{ Form::label('status', trans('validation.attributes.backend.access.article.status'), ['class' => 'col-md-2 from-control-label required']) }}

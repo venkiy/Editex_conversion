@@ -237,7 +237,8 @@ return [
                 'article' => [
                     'publisher_id' => 'Publisher Id',
                     'publisher_name' => 'Publisher Name',
-                    'article_id' => 'Article Id',                    
+                    'article_id' => 'Article Id',
+                    'article_path' => 'Article Location',                    
                     'status' => 'Status',
                 ],
             ],

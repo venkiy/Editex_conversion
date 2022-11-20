@@ -27,6 +27,9 @@
                     <li class="nav-item">
                         <a class="nav-link {{ $article->noecs!=1 ? 'disabled' : '' }}" data-toggle="tab" href="#galleypdfTab" role="tab" aria-controls="galleypdfTab" aria-expanded="false"><i class="fas fa-user"></i> @lang('labels.backend.access.editex.Process.step2')</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ $article->galleypdf!=1 ? 'disabled' : '' }}" data-toggle="tab" href="#galleyproofpdfTab" role="tab" aria-controls="galleyproofpdfTab" aria-expanded="false"><i class="fas fa-user"></i> @lang('labels.backend.access.editex.Process.step3')</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content">
@@ -38,6 +41,11 @@
                     <div class="tab-pane" id="galleypdfTab" role="tabpanel" aria-expanded="false">
                     <div class="col">
                     @include('backend.editex.articles.show.tabs.galleypdf')
+
+                    </div><!--tab-->
+                    <div class="tab-pane" id="galleyproofpdfTab" role="tabpanel" aria-expanded="false">
+                    <div class="col">
+                    @include('backend.editex.articles.show.tabs.galleyproofpdf')
 
                     </div><!--tab-->
                 </div>

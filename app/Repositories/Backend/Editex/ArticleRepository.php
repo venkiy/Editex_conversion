@@ -173,10 +173,14 @@ class ArticleRepository extends BaseRepository
             $article->noecs = $input['noecs'];
             $article->noecse_start = $input['noecs_start'];
             $article->noecse_end = $input['noecs_end'];
-        } else {
+        } else if ($input['process']=="btngalleypdf") {
             $article->galleypdf = $input['galleypdf'];
             $article->galleypdf_start = $input['galleypdf_start'];
             $article->galleypdf_end = $input['galleypdf_end'];
+        } else {
+            $article->galleyproofpdf = $input['galleyproofpdf'];
+            $article->galleyproofpdf_start = $input['galleyproofpdf_start'];
+            $article->galleyproofpdf_end = $input['galleyproofpdf_end'];
         }
         $article->save();
         

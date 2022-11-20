@@ -253,9 +253,10 @@ return [
                 'Process' => [
                 'step1'=>'NoeCEs',
                 'step2'=>'Galleys PDF',
-                'step3'=>'Typesetting',
-                'step4'=>'Proof PDF',
-                'step5'=>'Download package',
+                'step3'=>'Galleys Proof PDF',
+                'step4'=>'Typesetting',
+                'step5'=>'Proof PDF',
+                'step6'=>'Download package',
                 ],
                 'tabs' => [
                     'titles' => [
@@ -273,6 +274,7 @@ return [
                            'start' => 'Started at',
                             'end' => 'End at',                            
                             'stage_status' => 'Completed Status', 
+                            'location' => 'Document Location'
                         ],
                         'noecs' => [
                             'noecs_start' => 'Started at',

@@ -34,7 +34,7 @@
                         { data: 'article_id', name: 'article_id' },
                         { data: 'noecs', name: 'noecs' },
                         { data: 'galleypdf', name: 'galleypdf' },
-                        { data: 'typeset', name: 'typeset' },
+                        { data: 'galleyproofpdf', name: 'galleyproofpdf' },
                         { data: 'status', name: 'status', sortable: false },                        
                         { data: 'actions', name: 'actions', searchable: false, sortable: false }
                     ],

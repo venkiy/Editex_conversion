@@ -81,10 +81,15 @@ class EditexProcessController extends Controller
       $process = $request->process;
       if($process=="btnnoecs"){
         $executablePath = 'D:\Noesis-WF\Tools\BJBMS\DOC-CLEAN.BAT';
-      }else {
+      }else if ($process == "btngalleypdf"){
         $executablePath = 'D:\Noesis-WF\Tools\BJBMS\AUTOTEX.BAT';
+      }else {
+        $executablePath = 'S:\Softwares\AppData\NPS-TeX4ht.bat';
       }
-      $filePath = "D:\Noesis-WF\Sample\\".$articleName;
+      $article  = Article::where('article_id', $articleName)->first();
+      $aticlePath = $article->article_path;
+      //print_r($article->article_path);exit;
+      $filePath = $aticlePath."\\".$articleName;
       //exec('C:\wamp64\www\laravel_editexProcess\storage\app\articles\test.bat', $output);
       exec($executablePath." ".$filePath, $output);
       //exec('Y:\04_temp\Tool\27-BJBMS\TOOL\DOC-CLEAN.BAT D:\Noesis\BJMS\bjbms-2022-8034\bjbms-2022-8034', $output);
@@ -101,8 +106,10 @@ class EditexProcessController extends Controller
       if($process=="btnnoecs"){
       $request->merge(["noecs_start"=>$processStartTime, "noecs_end"=>$processEndTime, "noecs"=> 1, "article_id"=> $request->filename]);
       }
-      else {
+      else if ($process=="btngalleypdf") {
         $request->merge(["galleypdf_start"=>$processStartTime, "galleypdf_end"=>$processEndTime, "galleypdf"=> 1, "article_id"=> $request->filename]); 
+      } else {
+        $request->merge(["galleyproofpdf_start"=>$processStartTime, "galleyproofpdf_end"=>$processEndTime, "galleyproofpdf"=> 1, "article_id"=> $request->filename]); 
       }
       $this->repository->updateArticle($request->except(['_token', '_method']));
 
